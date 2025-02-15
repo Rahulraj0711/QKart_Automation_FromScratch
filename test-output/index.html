@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-QKart_Suite" class="navigator-link">
+              <span class="suite-name border-passed">QKart Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-QKart_Suite" class="navigator-link ">
+                    <span>D:\RAHUL\PROGRAMS\Maven Projects\rahul_qkart_fromScratch\src\test\java\TestSuiteRunners\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-QKart_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-QKart_Suite" class="navigator-link ">
+                    <span>3 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-QKart_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-QKart_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-QKart_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-QKart_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">20 methods,   20 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-QKart_Suite" class="hide-methods passed suite-QKart_Suite"> (hide)</a> <!-- hide-methods passed suite-QKart_Suite -->
+                      <a href="#" panel-name="suite-QKart_Suite" class="show-methods passed suite-QKart_Suite"> (show)</a> <!-- show-methods passed suite-QKart_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-QKart_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-QKart_Suite" title="rahul.raj.tests.LoginTest" class="method navigator-link" hash-for-method="InvalidLoginTest(raj1@gmail.com, Password123)">InvalidLoginTest(raj1@gmail.com, Password123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-QKart_Suite" title="rahul.raj.tests.LoginTest" class="method navigator-link" hash-for-method="InvalidLoginTest(raj2@gmail.com, Pass)">InvalidLoginTest(raj2@gmail.com, Pass)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-QKart_Suite" title="rahul.raj.tests.LoginTest" class="method navigator-link" hash-for-method="InvalidLoginTest(test, abc@123)">InvalidLoginTest(test, abc@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-QKart_Suite" title="rahul.raj.tests.SearchTest" class="method navigator-link" hash-for-method="InvalidProductSearch(Cart)">InvalidProductSearch(Cart)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-QKart_Suite" title="rahul.raj.tests.SearchTest" class="method navigator-link" hash-for-method="InvalidProductSearch(Bike)">InvalidProductSearch(Bike)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-QKart_Suite" title="rahul.raj.tests.SearchTest" class="method navigator-link" hash-for-method="InvalidProductSearch(Phone)">InvalidProductSearch(Phone)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-QKart_Suite" title="rahul.raj.tests.RegistrationTest" class="method navigator-link" hash-for-method="InvalidRegistrationTest(raj2@gmail.com, Password)">InvalidRegistrationTest(raj2@gmail.com, Password)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-QKart_Suite" title="rahul.raj.tests.RegistrationTest" class="method navigator-link" hash-for-method="InvalidRegistrationTest(rajxxx@gmail.com, Pass)">InvalidRegistrationTest(rajxxx@gmail.com, Pass)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-QKart_Suite" title="rahul.raj.tests.RegistrationTest" class="method navigator-link" hash-for-method="InvalidRegistrationTest(raj1, Password)">InvalidRegistrationTest(raj1, Password)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-QKart_Suite" title="rahul.raj.tests.LoginTest" class="method navigator-link" hash-for-method="ValidLoginTest(raj1@gmail.com, Password)">ValidLoginTest(raj1@gmail.com, Password)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-QKart_Suite" title="rahul.raj.tests.LoginTest" class="method navigator-link" hash-for-method="ValidLoginTest(abce@gmail.com, Password)">ValidLoginTest(abce@gmail.com, Password)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-QKart_Suite" title="rahul.raj.tests.LoginTest" class="method navigator-link" hash-for-method="ValidLoginTest(raj2@gmail.com, Password)">ValidLoginTest(raj2@gmail.com, Password)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-QKart_Suite" title="rahul.raj.tests.SearchTest" class="method navigator-link" hash-for-method="ValidProductSearch(Shoes)">ValidProductSearch(Shoes)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-QKart_Suite" title="rahul.raj.tests.SearchTest" class="method navigator-link" hash-for-method="ValidProductSearch(Watch)">ValidProductSearch(Watch)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-QKart_Suite" title="rahul.raj.tests.SearchTest" class="method navigator-link" hash-for-method="ValidProductSearch(Wallet)">ValidProductSearch(Wallet)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-QKart_Suite" title="rahul.raj.tests.SearchTest" class="method navigator-link" hash-for-method="ValidProductSearch(Badminton)">ValidProductSearch(Badminton)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-QKart_Suite" title="rahul.raj.tests.SearchTest" class="method navigator-link" hash-for-method="ValidProductSearch(Wood)">ValidProductSearch(Wood)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-QKart_Suite" title="rahul.raj.tests.RegistrationTest" class="method navigator-link" hash-for-method="ValidRegistrationTest(raj26@gmail.com, abc@123)">ValidRegistrationTest(raj26@gmail.com, abc@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-QKart_Suite" title="rahul.raj.tests.RegistrationTest" class="method navigator-link" hash-for-method="ValidRegistrationTest(raj28@gmail.com, Password@123)">ValidRegistrationTest(raj28@gmail.com, Password@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-QKart_Suite" title="rahul.raj.tests.RegistrationTest" class="method navigator-link" hash-for-method="ValidRegistrationTest(raj27@gmail.com, Password)">ValidRegistrationTest(raj27@gmail.com, Password)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-QKart_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-QKart_Suite" class="panel QKart_Suite">
+          <div class="suite-QKart_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">rahul.raj.tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="InvalidLoginTest(raj1@gmail.com, Password123)">
+                  </a> <!-- InvalidLoginTest(raj1@gmail.com, Password123) -->
+                  <span class="method-name">InvalidLoginTest</span>
+                  <span class="parameters">(raj1@gmail.com,Password123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="InvalidLoginTest(raj2@gmail.com, Pass)">
+                  </a> <!-- InvalidLoginTest(raj2@gmail.com, Pass) -->
+                  <span class="method-name">InvalidLoginTest</span>
+                  <span class="parameters">(raj2@gmail.com,Pass)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="InvalidLoginTest(test, abc@123)">
+                  </a> <!-- InvalidLoginTest(test, abc@123) -->
+                  <span class="method-name">InvalidLoginTest</span>
+                  <span class="parameters">(test,abc@123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidLoginTest(raj1@gmail.com, Password)">
+                  </a> <!-- ValidLoginTest(raj1@gmail.com, Password) -->
+                  <span class="method-name">ValidLoginTest</span>
+                  <span class="parameters">(raj1@gmail.com,Password)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidLoginTest(abce@gmail.com, Password)">
+                  </a> <!-- ValidLoginTest(abce@gmail.com, Password) -->
+                  <span class="method-name">ValidLoginTest</span>
+                  <span class="parameters">(abce@gmail.com,Password)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidLoginTest(raj2@gmail.com, Password)">
+                  </a> <!-- ValidLoginTest(raj2@gmail.com, Password) -->
+                  <span class="method-name">ValidLoginTest</span>
+                  <span class="parameters">(raj2@gmail.com,Password)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-QKart_Suite-class-passed -->
+          <div class="suite-QKart_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">rahul.raj.tests.RegistrationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="InvalidRegistrationTest(raj2@gmail.com, Password)">
+                  </a> <!-- InvalidRegistrationTest(raj2@gmail.com, Password) -->
+                  <span class="method-name">InvalidRegistrationTest</span>
+                  <span class="parameters">(raj2@gmail.com,Password)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="InvalidRegistrationTest(rajxxx@gmail.com, Pass)">
+                  </a> <!-- InvalidRegistrationTest(rajxxx@gmail.com, Pass) -->
+                  <span class="method-name">InvalidRegistrationTest</span>
+                  <span class="parameters">(rajxxx@gmail.com,Pass)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="InvalidRegistrationTest(raj1, Password)">
+                  </a> <!-- InvalidRegistrationTest(raj1, Password) -->
+                  <span class="method-name">InvalidRegistrationTest</span>
+                  <span class="parameters">(raj1,Password)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidRegistrationTest(raj26@gmail.com, abc@123)">
+                  </a> <!-- ValidRegistrationTest(raj26@gmail.com, abc@123) -->
+                  <span class="method-name">ValidRegistrationTest</span>
+                  <span class="parameters">(raj26@gmail.com,abc@123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidRegistrationTest(raj28@gmail.com, Password@123)">
+                  </a> <!-- ValidRegistrationTest(raj28@gmail.com, Password@123) -->
+                  <span class="method-name">ValidRegistrationTest</span>
+                  <span class="parameters">(raj28@gmail.com,Password@123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidRegistrationTest(raj27@gmail.com, Password)">
+                  </a> <!-- ValidRegistrationTest(raj27@gmail.com, Password) -->
+                  <span class="method-name">ValidRegistrationTest</span>
+                  <span class="parameters">(raj27@gmail.com,Password)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-QKart_Suite-class-passed -->
+          <div class="suite-QKart_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">rahul.raj.tests.SearchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="InvalidProductSearch(Cart)">
+                  </a> <!-- InvalidProductSearch(Cart) -->
+                  <span class="method-name">InvalidProductSearch</span>
+                  <span class="parameters">(Cart)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="InvalidProductSearch(Bike)">
+                  </a> <!-- InvalidProductSearch(Bike) -->
+                  <span class="method-name">InvalidProductSearch</span>
+                  <span class="parameters">(Bike)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="InvalidProductSearch(Phone)">
+                  </a> <!-- InvalidProductSearch(Phone) -->
+                  <span class="method-name">InvalidProductSearch</span>
+                  <span class="parameters">(Phone)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidProductSearch(Shoes)">
+                  </a> <!-- ValidProductSearch(Shoes) -->
+                  <span class="method-name">ValidProductSearch</span>
+                  <span class="parameters">(Shoes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidProductSearch(Watch)">
+                  </a> <!-- ValidProductSearch(Watch) -->
+                  <span class="method-name">ValidProductSearch</span>
+                  <span class="parameters">(Watch)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidProductSearch(Wallet)">
+                  </a> <!-- ValidProductSearch(Wallet) -->
+                  <span class="method-name">ValidProductSearch</span>
+                  <span class="parameters">(Wallet)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidProductSearch(Badminton)">
+                  </a> <!-- ValidProductSearch(Badminton) -->
+                  <span class="method-name">ValidProductSearch</span>
+                  <span class="parameters">(Badminton)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidProductSearch(Wood)">
+                  </a> <!-- ValidProductSearch(Wood) -->
+                  <span class="method-name">ValidProductSearch</span>
+                  <span class="parameters">(Wood)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-QKart_Suite-class-passed -->
+        </div> <!-- panel QKart_Suite -->
+        <div panel-name="test-xml-QKart_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\RAHUL\PROGRAMS\Maven Projects\rahul_qkart_fromScratch\src\test\java\TestSuiteRunners\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;QKart Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;rahul.raj.testUtilities.TestListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;classes&quot; name=&quot;QTrip Regression Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;rahul.raj.tests.LoginTest&quot;/&gt;
+      &lt;class name=&quot;rahul.raj.tests.RegistrationTest&quot;/&gt;
+      &lt;class name=&quot;rahul.raj.tests.SearchTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- QTrip Regression Test --&gt;
+&lt;/suite&gt; &lt;!-- QKart Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-QKart_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for QKart Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">QTrip Regression Test (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-QKart_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for QKart Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Login</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">InvalidLoginTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">ValidLoginTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Register</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">InvalidRegistrationTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">ValidRegistrationTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Search</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">InvalidProductSearch</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">ValidProductSearch</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-QKart_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for QKart Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_QKart_Suite');
+function tableData_QKart_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(20);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'InvalidLoginTest')
+data.setCell(0, 2, 'rahul.raj.tests.LoginTest')
+data.setCell(0, 3, 9998);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'InvalidRegistrationTest')
+data.setCell(1, 2, 'rahul.raj.tests.RegistrationTest')
+data.setCell(1, 3, 8227);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'ValidProductSearch')
+data.setCell(2, 2, 'rahul.raj.tests.SearchTest')
+data.setCell(2, 3, 7961);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'InvalidRegistrationTest')
+data.setCell(3, 2, 'rahul.raj.tests.RegistrationTest')
+data.setCell(3, 3, 7245);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'InvalidRegistrationTest')
+data.setCell(4, 2, 'rahul.raj.tests.RegistrationTest')
+data.setCell(4, 3, 7098);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'InvalidLoginTest')
+data.setCell(5, 2, 'rahul.raj.tests.LoginTest')
+data.setCell(5, 3, 6905);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'InvalidLoginTest')
+data.setCell(6, 2, 'rahul.raj.tests.LoginTest')
+data.setCell(6, 3, 6814);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'ValidProductSearch')
+data.setCell(7, 2, 'rahul.raj.tests.SearchTest')
+data.setCell(7, 3, 5872);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'ValidLoginTest')
+data.setCell(8, 2, 'rahul.raj.tests.LoginTest')
+data.setCell(8, 3, 5866);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'ValidLoginTest')
+data.setCell(9, 2, 'rahul.raj.tests.LoginTest')
+data.setCell(9, 3, 5460);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'ValidProductSearch')
+data.setCell(10, 2, 'rahul.raj.tests.SearchTest')
+data.setCell(10, 3, 5370);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'ValidProductSearch')
+data.setCell(11, 2, 'rahul.raj.tests.SearchTest')
+data.setCell(11, 3, 5327);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'InvalidProductSearch')
+data.setCell(12, 2, 'rahul.raj.tests.SearchTest')
+data.setCell(12, 3, 5276);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'InvalidProductSearch')
+data.setCell(13, 2, 'rahul.raj.tests.SearchTest')
+data.setCell(13, 3, 5268);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'ValidProductSearch')
+data.setCell(14, 2, 'rahul.raj.tests.SearchTest')
+data.setCell(14, 3, 5260);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'InvalidProductSearch')
+data.setCell(15, 2, 'rahul.raj.tests.SearchTest')
+data.setCell(15, 3, 5230);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'ValidRegistrationTest')
+data.setCell(16, 2, 'rahul.raj.tests.RegistrationTest')
+data.setCell(16, 3, 4373);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'ValidLoginTest')
+data.setCell(17, 2, 'rahul.raj.tests.LoginTest')
+data.setCell(17, 3, 2944);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'ValidRegistrationTest')
+data.setCell(18, 2, 'rahul.raj.tests.RegistrationTest')
+data.setCell(18, 3, 2766);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'ValidRegistrationTest')
+data.setCell(19, 2, 'rahul.raj.tests.RegistrationTest')
+data.setCell(19, 3, 2617);
+window.suiteTableData['QKart_Suite']= { tableData: data, tableDiv: 'times-div-QKart_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-QKart_Suite">
+              </div> <!-- times-div-QKart_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-QKart_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for QKart Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-QKart_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-QKart_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">rahul.raj.tests.RegistrationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">driverSetup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">rahul.raj.tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">driverSetup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">rahul.raj.tests.SearchTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">driverSetup</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">ValidProductSearch(Shoes)</span>
+                <span class="method-start">117274 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">rahul.raj.tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">ValidLoginTest(abce@gmail.com, Password)</span>
+                <span class="method-start">117637 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">rahul.raj.tests.RegistrationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">ValidRegistrationTest(raj26@gmail.com, abc@123)</span>
+                <span class="method-start">117996 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ValidRegistrationTest(raj27@gmail.com, Password)</span>
+                <span class="method-start">120641 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">rahul.raj.tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">ValidLoginTest(raj1@gmail.com, Password)</span>
+                <span class="method-start">123106 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">rahul.raj.tests.RegistrationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">ValidRegistrationTest(raj28@gmail.com, Password@123)</span>
+                <span class="method-start">123414 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">rahul.raj.tests.SearchTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">ValidProductSearch(Badminton)</span>
+                <span class="method-start">125240 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">rahul.raj.tests.RegistrationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">InvalidRegistrationTest(raj2@gmail.com, Password)</span>
+                <span class="method-start">127989 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">rahul.raj.tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">ValidLoginTest(raj2@gmail.com, Password)</span>
+                <span class="method-start">128976 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">rahul.raj.tests.SearchTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">ValidProductSearch(Wallet)</span>
+                <span class="method-start">131118 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">rahul.raj.tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">InvalidLoginTest(test, abc@123)</span>
+                <span class="method-start">132048 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">rahul.raj.tests.RegistrationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">InvalidRegistrationTest(raj1, Password)</span>
+                <span class="method-start">136218 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">rahul.raj.tests.SearchTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">ValidProductSearch(Wood)</span>
+                <span class="method-start">136491 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ValidProductSearch(Watch)</span>
+                <span class="method-start">141818 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">rahul.raj.tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">InvalidLoginTest(raj1@gmail.com, Password123)</span>
+                <span class="method-start">142046 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">rahul.raj.tests.RegistrationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">InvalidRegistrationTest(rajxxx@gmail.com, Pass)</span>
+                <span class="method-start">143463 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">rahul.raj.tests.SearchTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">InvalidProductSearch(Cart)</span>
+                <span class="method-start">147135 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">rahul.raj.tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">InvalidLoginTest(raj2@gmail.com, Pass)</span>
+                <span class="method-start">148954 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">rahul.raj.tests.RegistrationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">150561 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">rahul.raj.tests.SearchTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">InvalidProductSearch(Bike)</span>
+                <span class="method-start">152411 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">rahul.raj.tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">155769 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">rahul.raj.tests.SearchTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">InvalidProductSearch(Phone)</span>
+                <span class="method-start">157679 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">162909 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

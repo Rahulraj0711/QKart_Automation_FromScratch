@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="20" passed="20" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-01-20T03:17:53 IST" name="QKart Suite" finished-at="2025-01-20T03:20:37 IST" duration-ms="163956">
+    <groups>
+      <group name="Register">
+        <method signature="RegistrationTest.ValidRegistrationTest(java.lang.String,java.lang.String)[pri:1, instance:rahul.raj.tests.RegistrationTest@78fa769e]" name="ValidRegistrationTest" class="rahul.raj.tests.RegistrationTest"/>
+        <method signature="RegistrationTest.InvalidRegistrationTest(java.lang.String,java.lang.String)[pri:2, instance:rahul.raj.tests.RegistrationTest@78fa769e]" name="InvalidRegistrationTest" class="rahul.raj.tests.RegistrationTest"/>
+      </group> <!-- Register -->
+      <group name="Search">
+        <method signature="SearchTest.ValidProductSearch(java.lang.String)[pri:1, instance:rahul.raj.tests.SearchTest@16612a51]" name="ValidProductSearch" class="rahul.raj.tests.SearchTest"/>
+        <method signature="SearchTest.InvalidProductSearch(java.lang.String)[pri:2, instance:rahul.raj.tests.SearchTest@16612a51]" name="InvalidProductSearch" class="rahul.raj.tests.SearchTest"/>
+      </group> <!-- Search -->
+      <group name="Login">
+        <method signature="LoginTest.ValidLoginTest(java.lang.String,java.lang.String)[pri:1, instance:rahul.raj.tests.LoginTest@7f2cfe3f]" name="ValidLoginTest" class="rahul.raj.tests.LoginTest"/>
+        <method signature="LoginTest.InvalidLoginTest(java.lang.String,java.lang.String)[pri:2, instance:rahul.raj.tests.LoginTest@7f2cfe3f]" name="InvalidLoginTest" class="rahul.raj.tests.LoginTest"/>
+      </group> <!-- Login -->
+    </groups>
+    <test started-at="2025-01-20T03:17:53 IST" name="QTrip Regression Test" finished-at="2025-01-20T03:20:37 IST" duration-ms="163956">
+      <class name="rahul.raj.tests.SearchTest">
+        <test-method is-config="true" signature="driverSetup()[pri:0, instance:rahul.raj.tests.SearchTest@16612a51]" started-at="2025-01-20T03:17:53 IST" name="driverSetup" finished-at="2025-01-20T03:19:50 IST" duration-ms="116261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverSetup -->
+        <test-method signature="ValidProductSearch(java.lang.String)[pri:1, instance:rahul.raj.tests.SearchTest@16612a51]" started-at="2025-01-20T03:19:51 IST" name="ValidProductSearch" data-provider="testData" finished-at="2025-01-20T03:19:59 IST" duration-ms="7961" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Shoes]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidProductSearch -->
+        <test-method signature="ValidProductSearch(java.lang.String)[pri:1, instance:rahul.raj.tests.SearchTest@16612a51]" started-at="2025-01-20T03:19:59 IST" name="ValidProductSearch" data-provider="testData" finished-at="2025-01-20T03:20:04 IST" duration-ms="5872" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Badminton]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidProductSearch -->
+        <test-method signature="ValidProductSearch(java.lang.String)[pri:1, instance:rahul.raj.tests.SearchTest@16612a51]" started-at="2025-01-20T03:20:04 IST" name="ValidProductSearch" data-provider="testData" finished-at="2025-01-20T03:20:10 IST" duration-ms="5370" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Wallet]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidProductSearch -->
+        <test-method signature="ValidProductSearch(java.lang.String)[pri:1, instance:rahul.raj.tests.SearchTest@16612a51]" started-at="2025-01-20T03:20:10 IST" name="ValidProductSearch" data-provider="testData" finished-at="2025-01-20T03:20:15 IST" duration-ms="5327" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Wood]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidProductSearch -->
+        <test-method signature="ValidProductSearch(java.lang.String)[pri:1, instance:rahul.raj.tests.SearchTest@16612a51]" started-at="2025-01-20T03:20:15 IST" name="ValidProductSearch" data-provider="testData" finished-at="2025-01-20T03:20:20 IST" duration-ms="5260" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Watch]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidProductSearch -->
+        <test-method signature="InvalidProductSearch(java.lang.String)[pri:2, instance:rahul.raj.tests.SearchTest@16612a51]" started-at="2025-01-20T03:20:20 IST" name="InvalidProductSearch" data-provider="testData" finished-at="2025-01-20T03:20:26 IST" duration-ms="5276" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Cart]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidProductSearch -->
+        <test-method signature="InvalidProductSearch(java.lang.String)[pri:2, instance:rahul.raj.tests.SearchTest@16612a51]" started-at="2025-01-20T03:20:26 IST" name="InvalidProductSearch" data-provider="testData" finished-at="2025-01-20T03:20:31 IST" duration-ms="5268" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bike]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidProductSearch -->
+        <test-method signature="InvalidProductSearch(java.lang.String)[pri:2, instance:rahul.raj.tests.SearchTest@16612a51]" started-at="2025-01-20T03:20:31 IST" name="InvalidProductSearch" data-provider="testData" finished-at="2025-01-20T03:20:36 IST" duration-ms="5230" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Phone]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidProductSearch -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:rahul.raj.tests.SearchTest@16612a51]" started-at="2025-01-20T03:20:36 IST" name="closeBrowser" finished-at="2025-01-20T03:20:37 IST" duration-ms="993" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- rahul.raj.tests.SearchTest -->
+      <class name="rahul.raj.tests.RegistrationTest">
+        <test-method is-config="true" signature="driverSetup()[pri:0, instance:rahul.raj.tests.RegistrationTest@78fa769e]" started-at="2025-01-20T03:17:53 IST" name="driverSetup" finished-at="2025-01-20T03:19:51 IST" duration-ms="117825" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverSetup -->
+        <test-method signature="ValidRegistrationTest(java.lang.String,java.lang.String)[pri:1, instance:rahul.raj.tests.RegistrationTest@78fa769e]" started-at="2025-01-20T03:19:51 IST" name="ValidRegistrationTest" data-provider="testData" finished-at="2025-01-20T03:19:54 IST" duration-ms="2617" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[raj26@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidRegistrationTest -->
+        <test-method signature="ValidRegistrationTest(java.lang.String,java.lang.String)[pri:1, instance:rahul.raj.tests.RegistrationTest@78fa769e]" started-at="2025-01-20T03:19:54 IST" name="ValidRegistrationTest" data-provider="testData" finished-at="2025-01-20T03:19:57 IST" duration-ms="2766" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[raj27@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidRegistrationTest -->
+        <test-method signature="ValidRegistrationTest(java.lang.String,java.lang.String)[pri:1, instance:rahul.raj.tests.RegistrationTest@78fa769e]" started-at="2025-01-20T03:19:57 IST" name="ValidRegistrationTest" data-provider="testData" finished-at="2025-01-20T03:20:01 IST" duration-ms="4373" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[raj28@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidRegistrationTest -->
+        <test-method signature="InvalidRegistrationTest(java.lang.String,java.lang.String)[pri:2, instance:rahul.raj.tests.RegistrationTest@78fa769e]" started-at="2025-01-20T03:20:01 IST" name="InvalidRegistrationTest" data-provider="testData" finished-at="2025-01-20T03:20:10 IST" duration-ms="8227" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[raj2@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidRegistrationTest -->
+        <test-method signature="InvalidRegistrationTest(java.lang.String,java.lang.String)[pri:2, instance:rahul.raj.tests.RegistrationTest@78fa769e]" started-at="2025-01-20T03:20:10 IST" name="InvalidRegistrationTest" data-provider="testData" finished-at="2025-01-20T03:20:17 IST" duration-ms="7245" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[raj1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidRegistrationTest -->
+        <test-method signature="InvalidRegistrationTest(java.lang.String,java.lang.String)[pri:2, instance:rahul.raj.tests.RegistrationTest@78fa769e]" started-at="2025-01-20T03:20:17 IST" name="InvalidRegistrationTest" data-provider="testData" finished-at="2025-01-20T03:20:24 IST" duration-ms="7098" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[rajxxx@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pass]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidRegistrationTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:rahul.raj.tests.RegistrationTest@78fa769e]" started-at="2025-01-20T03:20:24 IST" name="closeBrowser" finished-at="2025-01-20T03:20:25 IST" duration-ms="643" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- rahul.raj.tests.RegistrationTest -->
+      <class name="rahul.raj.tests.LoginTest">
+        <test-method is-config="true" signature="driverSetup()[pri:0, instance:rahul.raj.tests.LoginTest@7f2cfe3f]" started-at="2025-01-20T03:17:53 IST" name="driverSetup" finished-at="2025-01-20T03:19:51 IST" duration-ms="117389" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverSetup -->
+        <test-method signature="ValidLoginTest(java.lang.String,java.lang.String)[pri:1, instance:rahul.raj.tests.LoginTest@7f2cfe3f]" started-at="2025-01-20T03:19:51 IST" name="ValidLoginTest" data-provider="testData" finished-at="2025-01-20T03:19:56 IST" duration-ms="5460" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abce@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidLoginTest -->
+        <test-method signature="ValidLoginTest(java.lang.String,java.lang.String)[pri:1, instance:rahul.raj.tests.LoginTest@7f2cfe3f]" started-at="2025-01-20T03:19:56 IST" name="ValidLoginTest" data-provider="testData" finished-at="2025-01-20T03:20:02 IST" duration-ms="5866" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[raj1@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidLoginTest -->
+        <test-method signature="ValidLoginTest(java.lang.String,java.lang.String)[pri:1, instance:rahul.raj.tests.LoginTest@7f2cfe3f]" started-at="2025-01-20T03:20:02 IST" name="ValidLoginTest" data-provider="testData" finished-at="2025-01-20T03:20:05 IST" duration-ms="2944" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[raj2@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidLoginTest -->
+        <test-method signature="InvalidLoginTest(java.lang.String,java.lang.String)[pri:2, instance:rahul.raj.tests.LoginTest@7f2cfe3f]" started-at="2025-01-20T03:20:05 IST" name="InvalidLoginTest" data-provider="testData" finished-at="2025-01-20T03:20:15 IST" duration-ms="9998" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidLoginTest -->
+        <test-method signature="InvalidLoginTest(java.lang.String,java.lang.String)[pri:2, instance:rahul.raj.tests.LoginTest@7f2cfe3f]" started-at="2025-01-20T03:20:15 IST" name="InvalidLoginTest" data-provider="testData" finished-at="2025-01-20T03:20:22 IST" duration-ms="6905" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[raj1@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidLoginTest -->
+        <test-method signature="InvalidLoginTest(java.lang.String,java.lang.String)[pri:2, instance:rahul.raj.tests.LoginTest@7f2cfe3f]" started-at="2025-01-20T03:20:22 IST" name="InvalidLoginTest" data-provider="testData" finished-at="2025-01-20T03:20:29 IST" duration-ms="6814" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[raj2@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pass]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidLoginTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:rahul.raj.tests.LoginTest@7f2cfe3f]" started-at="2025-01-20T03:20:29 IST" name="closeBrowser" finished-at="2025-01-20T03:20:32 IST" duration-ms="2454" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- rahul.raj.tests.LoginTest -->
+    </test> <!-- QTrip Regression Test -->
+  </suite> <!-- QKart Suite -->
+</testng-results>
