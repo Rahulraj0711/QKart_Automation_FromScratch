@@ -37,6 +37,8 @@ public class RegistrationTest {
 	@Test(priority = 1, dataProvider = "testData", dataProviderClass = DataProviderClass.class, enabled=true, groups = "Register")
 	public void ValidRegistrationTest(String userName, String password) {
 		if(rp.isUserOnRegisterPage()) {
+			String timestamp= String.valueOf(System.currentTimeMillis());
+			userName=userName+"_"+timestamp;
 			rp.performUserRegistration(userName, password);
 			SeleniumWrapper.webDriverWait(driver, ExpectedConditions.urlContains("login"), 15);
 		}
