@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="QKart Suite">
+	<listeners>
+		<listener class-name="rahul.raj.testUtilities.TestListener"/>
+	</listeners>
+    <test name="QTrip Regression Test">
+    	<groups>
+    		<run>
+    			<include name="Register"/>
+    		</run>
+    	</groups>
+        <classes>
+            <class name="rahul.raj.tests.LoginTest"/>
+            <class name="rahul.raj.tests.RegistrationTest"/>
+            <class name="rahul.raj.tests.SearchTest"/>
+        </classes>
+    </test>
+</suite>
