@@ -75,6 +75,88 @@
     </dependency>
   </dependencies>
 
+  <profiles>
+    <profile>
+      <id>Regression</id>
+      <build>
+        <pluginManagement>
+          <plugins>
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-surefire-plugin</artifactId>
+              <version>3.5.3</version>
+              <configuration>
+                <suiteXmlFiles>
+                  <suiteXmlFile>src/test/java/TestSuiteRunners/testng.xml</suiteXmlFile>
+                </suiteXmlFiles>
+              </configuration>
+            </plugin>
+          </plugins>
+        </pluginManagement>
+      </build>
+    </profile>
+
+    <profile>
+      <id>Login</id>
+      <build>
+        <pluginManagement>
+          <plugins>
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-surefire-plugin</artifactId>
+              <version>3.5.3</version>
+              <configuration>
+                <suiteXmlFiles>
+                  <suiteXmlFile>src/test/java/TestSuiteRunners/loginTestng.xml</suiteXmlFile>
+                </suiteXmlFiles>
+              </configuration>
+            </plugin>
+          </plugins>
+        </pluginManagement>
+      </build>
+    </profile>
+
+    <profile>
+      <id>Registration</id>
+      <build>
+        <pluginManagement>
+          <plugins>
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-surefire-plugin</artifactId>
+              <version>3.5.3</version>
+              <configuration>
+                <suiteXmlFiles>
+                  <suiteXmlFile>src/test/java/TestSuiteRunners/registerTestng.xml</suiteXmlFile>
+                </suiteXmlFiles>
+              </configuration>
+            </plugin>
+          </plugins>
+        </pluginManagement>
+      </build>
+    </profile>
+
+    <profile>
+      <id>Search</id>
+      <build>
+        <pluginManagement>
+          <plugins>
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-surefire-plugin</artifactId>
+              <version>3.5.3</version>
+              <configuration>
+                <suiteXmlFiles>
+                  <suiteXmlFile>src/test/java/TestSuiteRunners/searchTestng.xml</suiteXmlFile>
+                </suiteXmlFiles>
+              </configuration>
+            </plugin>
+          </plugins>
+        </pluginManagement>
+      </build>
+    </profile>
+  </profiles>
+
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (maybe moved to parent pom) -->
       <plugins>
