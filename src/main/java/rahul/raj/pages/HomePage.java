@@ -1,6 +1,5 @@
 package rahul.raj.pages;
 
-import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -11,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import rahul.raj.helpers.SeleniumWrapper;
 
 public class HomePage {
-	private WebDriver driver;
+	private final WebDriver driver;
 	
 	public HomePage(WebDriver driver) {
 		this.driver=driver;
@@ -21,10 +20,7 @@ public class HomePage {
 	// Locators
 	@FindBy(xpath = "(//input)[1]")
 	WebElement searchBox;
-	
-	@FindBy(css = "div.search-desktop div div svg")
-	WebElement searchIcon;
-	
+
 	@FindBy(xpath = "//button[normalize-space()='Login']")
 	WebElement loginButton;
 	
@@ -46,8 +42,7 @@ public class HomePage {
 	}
 	
 	public List<WebElement> getSearchResults() {
-		List<WebElement> resultsList=SeleniumWrapper.findElements(driver, By.cssSelector(".css-1qw96cp"));
-		return resultsList;
+        return SeleniumWrapper.findElements(driver, By.cssSelector(".css-1qw96cp"));
 	}
 	
 	public boolean checkSearchedProducts(List<WebElement> resultsList, String searchedProduct) {

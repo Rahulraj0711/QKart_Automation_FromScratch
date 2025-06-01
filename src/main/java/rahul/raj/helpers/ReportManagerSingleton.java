@@ -5,7 +5,7 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 public class ReportManagerSingleton {
 	private static ReportManagerSingleton reporterInstance;
-    private ExtentReports extent;
+    private final ExtentReports extent;
 
     private ReportManagerSingleton() {
         String path=System.getProperty("user.dir")+"\\reports\\index.html";

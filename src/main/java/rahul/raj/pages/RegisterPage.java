@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import rahul.raj.helpers.SeleniumWrapper;
 
 public class RegisterPage {
-	private WebDriver driver;
+	private final WebDriver driver;
 	
 	public RegisterPage(WebDriver driver) {
 		this.driver=driver;

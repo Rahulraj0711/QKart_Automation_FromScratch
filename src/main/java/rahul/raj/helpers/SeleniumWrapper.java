@@ -7,7 +7,6 @@ import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -22,25 +21,17 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class SeleniumWrapper {
 
 	public static WebElement findElement(WebDriver driver, By by) {
-		WebElement element=driver.findElement(by);
-		return element;
+        return driver.findElement(by);
 	}
 	
 	public static WebElement findElementUsingElement(WebElement element1, By by) {
-		WebElement element2=element1.findElement(by);
-		return element2;
+        return element1.findElement(by);
 	}
 	
 	public static List<WebElement> findElements(WebDriver driver, By by) {
-		List<WebElement> elements=driver.findElements(by);
-		return elements;
+        return driver.findElements(by);
 	}
-	
-	public static void implicitWait(WebDriver driver, int seconds) {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(seconds));
-	}
-	
-	
+
 	public static boolean webDriverWait(WebDriver driver, ExpectedCondition<?> condition, int seconds) {
 		try {
 			WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(seconds));
@@ -64,10 +55,10 @@ public class SeleniumWrapper {
 		}
 	}
 	
-	public static void scrollToElement(WebDriver driver, WebElement element) {
-		webDriverWait(driver, ExpectedConditions.visibilityOf(element), 15);
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
-	}
+//	public static void scrollToElement(WebDriver driver, WebElement element) {
+//		webDriverWait(driver, ExpectedConditions.visibilityOf(element), 15);
+//        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+//	}
 	
 	public static void click(WebDriver driver, WebElement element) {
 		webDriverWait(driver, ExpectedConditions.visibilityOf(element), 15);

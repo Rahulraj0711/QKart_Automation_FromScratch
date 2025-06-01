@@ -16,9 +16,9 @@ import rahul.raj.helpers.SeleniumWrapper;
 import rahul.raj.helpers.WebDriverManagerSingleton;
 
 public class TestListener implements ITestListener {
-	private ReportManagerSingleton reporterInstance=ReportManagerSingleton.getReporterInstance();
-	private ExtentReports extent=reporterInstance.getExtentReports();
-	private ThreadLocal<ExtentTest> testThread=new ThreadLocal<ExtentTest>();
+	private final ReportManagerSingleton reporterInstance=ReportManagerSingleton.getReporterInstance();
+	private final ExtentReports extent=reporterInstance.getExtentReports();
+	private final ThreadLocal<ExtentTest> testThread= new ThreadLocal<>();
 	
 	public void onTestStart(ITestResult result) {
 		ExtentTest test=extent.createTest(result.getMethod().getMethodName());

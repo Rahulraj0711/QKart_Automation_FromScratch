@@ -1,6 +1,5 @@
 package rahul.raj.tests;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
 
@@ -16,25 +15,24 @@ import rahul.raj.pages.HomePage;
 import rahul.raj.testUtilities.DataProviderClass;
 
 public class SearchTest {
-	private WebDriver driver;
-	private WebDriverManagerSingleton instance;
+    private WebDriverManagerSingleton instance;
 	private HomePage hp;
 	
 	@BeforeClass(alwaysRun = true)
-	public void driverSetup() throws FileNotFoundException, IOException {
+	public void driverSetup() throws IOException {
 		instance=WebDriverManagerSingleton.getInstanceOfBrowser();
-		driver=instance.getDriver();
+        WebDriver driver = instance.getDriver();
 		hp=new HomePage(driver);
 	}
 	
-	@Test(priority = 1, dataProvider = "testData", dataProviderClass = DataProviderClass.class, enabled=true, groups = "Search")
+	@Test(priority = 1, dataProvider = "testData", dataProviderClass = DataProviderClass.class, groups = "Search")
 	public void ValidProductSearch(String productName) throws InterruptedException {
 		hp.searchProduct(productName);
 		List<WebElement> products=hp.getSearchResults();
 		Assert.assertTrue(hp.checkSearchedProducts(products, productName));
 	}
 	
-	@Test(priority = 2, dataProvider = "testData", dataProviderClass = DataProviderClass.class, enabled=true, groups = "Search")
+	@Test(priority = 2, dataProvider = "testData", dataProviderClass = DataProviderClass.class, groups = "Search")
 	public void InvalidProductSearch(String productName) throws InterruptedException {
 		hp.searchProduct(productName);
 		Assert.assertTrue(hp.noProductFound());

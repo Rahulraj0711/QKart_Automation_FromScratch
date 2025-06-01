@@ -1,7 +1,6 @@
 package rahul.raj.helpers;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
@@ -12,9 +11,9 @@ import org.openqa.selenium.chrome.ChromeOptions;
 public class WebDriverManagerSingleton {
 	
 	private static WebDriverManagerSingleton driverInstance=null;
-	private ThreadLocal<WebDriver> driverThread=new ThreadLocal<WebDriver>();
+	private final ThreadLocal<WebDriver> driverThread= new ThreadLocal<>();
 	
-	private WebDriverManagerSingleton() throws FileNotFoundException, IOException {
+	private WebDriverManagerSingleton() throws IOException {
 		Properties prop=new Properties();
 		prop.load(new FileInputStream(System.getProperty("user.dir")+"/src/test/java/rahul/raj/resources/GlobalData.properties"));
 		String browser=prop.getProperty("browser");
@@ -36,7 +35,7 @@ public class WebDriverManagerSingleton {
 		driverThread.get().get(prop.getProperty("url"));
 	}
 	
-	public static WebDriverManagerSingleton getInstanceOfBrowser() throws FileNotFoundException, IOException {
+	public static WebDriverManagerSingleton getInstanceOfBrowser() throws IOException {
 		if(driverInstance==null) {
 			driverInstance=new WebDriverManagerSingleton();
 		}

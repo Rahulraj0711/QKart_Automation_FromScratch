@@ -1,6 +1,5 @@
 package rahul.raj.tests;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
@@ -20,21 +19,20 @@ import rahul.raj.testUtilities.DataProviderClass;
 public class RegistrationTest {
 	private WebDriver driver;
 	private WebDriverManagerSingleton instance;
-	private HomePage hp;
-	private LoginPage lp;
+    private LoginPage lp;
 	private RegisterPage rp;
 	
 	@BeforeClass(alwaysRun = true)
-	public void driverSetup() throws FileNotFoundException, IOException {
+	public void driverSetup() throws IOException {
 		instance=WebDriverManagerSingleton.getInstanceOfBrowser();
 		driver=instance.getDriver();
-		hp=new HomePage(driver);
+        HomePage hp = new HomePage(driver);
 		lp=new LoginPage(driver);
 		rp=new RegisterPage(driver);
 		hp.navigateToRegisterPage();
 	}
 	
-	@Test(priority = 1, dataProvider = "testData", dataProviderClass = DataProviderClass.class, enabled=true, groups = "Register")
+	@Test(priority = 1, dataProvider = "testData", dataProviderClass = DataProviderClass.class, groups = "Register")
 	public void ValidRegistrationTest(String userName, String password) {
 		if(rp.isUserOnRegisterPage()) {
 			String timestamp= String.valueOf(System.currentTimeMillis());
@@ -46,7 +44,7 @@ public class RegistrationTest {
 		lp.navigateToRegisterFromLogin();
 	}
 	
-	@Test(priority = 2, dataProvider = "testData", dataProviderClass = DataProviderClass.class, enabled=true, groups = "Register")
+	@Test(priority = 2, dataProvider = "testData", dataProviderClass = DataProviderClass.class, groups = "Register")
 	public void InvalidRegistrationTest(String userName, String password) {
 		if(rp.isUserOnRegisterPage()) {
 			rp.performUserRegistration(userName, password);
